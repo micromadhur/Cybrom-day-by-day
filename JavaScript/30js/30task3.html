@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="count">0</h1>
+    <img src=""
+    <button onclick="inc()">+</button>
+    <button onclick="dec()">-</button>
+    <script>
+        var v=0;
+        let c=document.getElementById('count')
+        function inc(){
+            v++;
+            c.innerHTML=v
+        }
+
+        function dec(){
+            count--;
+            if(count>0) {
+                count=0;
+            }
+        }
+    </script>
+</body>
+</html>

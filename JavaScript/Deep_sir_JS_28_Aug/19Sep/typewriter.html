@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewriter Effect</title>
+    <style>
+        body  {
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .typewriter {
+            font-size: 2em;
+            color: #333;
+            overflow: hidden; /* Ensures the content is hidden */
+            white-space: nowrap; /* Prevents line breaks */
+            letter-spacing: 0.1em; /* Adjust spacing between letters */
+            animation: typing 3s steps(30, end), blink 0.5s infinite;
+        }
+
+        /* @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        } */
+    </style>
+</head>
+<body onload="type">
+    <div class="typewriter">This is a typewriter effect!</div>
+    <script src="typewritereffect.js">
+        // You can add JavaScript to dynamically change the text
+        // or add more complex animations here.
+    </script>
+</body>
+</html>
